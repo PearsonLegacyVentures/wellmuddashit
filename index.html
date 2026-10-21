@@ -1,16 +1,196 @@
 <!doctype html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta name="theme-color" content="#f3ecdf" />
-    <meta name="description" content="Well Mudda S____ — a bold new Bahamian toilet paper brand in development." />
-    <meta property="og:title" content="Well Mudda S____" />
-    <meta property="og:description" content="Good paper. Bad timing. Born in The Bahamas." />
-    <title>Well Mudda S____ | Born in The Bahamas</title>
-  </head>
-  <body>
-    <div id="root"></div>
-    <script type="module" src="/src/main.jsx"></script>
-  </body>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="theme-color" content="#f3ecdf" />
+  <meta name="description" content="Well Mudda S____ — a bold new Bahamian toilet paper brand in development." />
+  <meta property="og:title" content="Well Mudda S____" />
+  <meta property="og:description" content="Good paper. Bad timing. Born in The Bahamas." />
+  <title>Well Mudda S____ | Born in The Bahamas</title>
+  <link rel="stylesheet" href="/styles.css" />
+</head>
+<body>
+  <header class="nav">
+    <button class="wordmark" data-scroll="top">WMS____</button>
+    <nav class="nav__links" id="navLinks">
+      <button data-scroll="roll">The Roll</button>
+      <button data-scroll="hospitality">Hospitality</button>
+      <button data-scroll="story">Our Story</button>
+      <button data-scroll="faq">FAQ</button>
+    </nav>
+    <button class="nav__cta" data-scroll="launch">GET FIRST DIBS <span>↗</span></button>
+    <button class="menu" id="menuButton" aria-label="Toggle navigation">≡</button>
+  </header>
+
+  <main>
+    <section class="hero" id="top">
+      <div class="hero__noise"></div>
+      <div class="hero__copy">
+        <span class="eyebrow"><i></i> PRE-LAUNCH · NASSAU, THE BAHAMAS</span>
+        <h1>THE BAHAMAS<br>HAS ENOUGH<br><span>BORING</span> TOILET<br>PAPER.</h1>
+        <p>A new Bahamian paper brand built to sit pretty in your bathroom, your villa, your hotel — and eventually, a shelf far beyond the 242.</p>
+        <div class="hero__actions">
+          <button class="button button--black" data-scroll="roll">MEET THE ROLL <span>↓</span></button>
+          <button class="button button--ghost" data-scroll="hospitality">FOR HOSPITALITY</button>
+        </div>
+      </div>
+
+      <div class="hero__visual" id="heroVisual">
+        <div class="sun"></div>
+        <div class="hero__pack">
+          <div class="pack">
+            <div class="pack__gloss"></div>
+            <span class="pack__count">12<small>ROLLS</small></span>
+            <div class="logo" aria-label="Well Mudda S blank">
+              <span>WELL</span><span>MUDDA</span><span class="logo__last">S<span class="redact"></span></span>
+            </div>
+            <div class="pack__meta">PREMIUM 3-PLY · IN DEVELOPMENT</div>
+            <div class="pack__stripe"></div>
+            <div class="pack__rolls" aria-hidden="true"><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i></div>
+            <span class="pack__born">BORN IN<br>THE BAHAMAS</span>
+          </div>
+        </div>
+        <div class="stamp stamp--one">GOOD<br>PAPER.</div>
+        <div class="stamp stamp--two">BAD<br>TIMING.</div>
+        <div class="micro-copy">THE LITTLE DETAILS<br>MAKE THE BIGGER STAYS.</div>
+      </div>
+    </section>
+
+    <div class="ticker" aria-hidden="true">
+      <div>
+        <span>SOFT WHERE IT MATTERS <b>✦</b></span>
+        <span>BORN IN THE BAHAMAS <b>✦</b></span>
+        <span>GOOD PAPER. BAD TIMING. <b>✦</b></span>
+        <span>WELL MUDDA S____ <b>✦</b></span>
+        <span>SOFT WHERE IT MATTERS <b>✦</b></span>
+        <span>BORN IN THE BAHAMAS <b>✦</b></span>
+        <span>GOOD PAPER. BAD TIMING. <b>✦</b></span>
+        <span>WELL MUDDA S____ <b>✦</b></span>
+      </div>
+    </div>
+
+    <section class="blank-section">
+      <span class="section-tag">01 / THE BRAND</span>
+      <div class="blank-section__grid">
+        <h2>YOU ALREADY<br>FINISHED THE<br>SENTENCE.</h2>
+        <div class="blank-section__right">
+          <div class="blank-live">WELL MUDDA <span id="blankWord">SOFT.</span></div>
+          <p>The blank is the joke. The restraint is the brand. Clean enough for a hotel. Loud enough to stop somebody in the aisle.</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="roll" id="roll">
+      <div class="roll__head">
+        <span class="section-tag section-tag--light">02 / THE ROLL</span>
+        <h2>SOFT WHERE<br>IT MATTERS.</h2>
+        <p>One launch product. No SKU circus. We are developing a premium household roll that can work for consumers and hospitality without pretending the final spec is finished before it is.</p>
+      </div>
+      <div class="roll__stage">
+        <div class="roll-object">
+          <div class="roll-object__side">
+            <div class="logo logo--compact"><span>WELL</span><span>MUDDA</span><span class="logo__last">S<span class="redact"></span></span></div>
+          </div>
+          <div class="roll-object__hole"></div>
+        </div>
+        <div class="roll__specs">
+          <div><strong>3</strong><span>PLY<br><small>LAUNCH TARGET</small></span></div>
+          <div><strong>12</strong><span>ROLLS<br><small>CONSUMER PACK</small></span></div>
+          <div><strong>01</strong><span>CORE SKU<br><small>KEEP IT LEAN</small></span></div>
+          <p>Final sheet count, fibre composition, embossing and performance claims will be published after supplier sampling and production validation.</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="hospitality" id="hospitality">
+      <div class="hospitality__copy">
+        <span class="section-tag">03 / HOSPITALITY</span>
+        <h2>YOUR GUEST<br>NOTICES THE<br><em>LITTLE</em> S____.</h2>
+        <p>Our intended first wedge: villas, short-term rentals, boutique hotels and hospitality operators that care about presentation, reliable restocking and the details guests actually touch.</p>
+        <button class="text-link" data-scroll="launch">REGISTER HOSPITALITY INTEREST <span>↗</span></button>
+      </div>
+      <div class="hospitality__visual">
+        <div class="hotel-card">
+          <span>WELL MUDDA S____</span>
+          <strong>48</strong>
+          <small>ROLL HOSPITALITY CASE<br>CONCEPT FORMAT</small>
+        </div>
+        <div class="pack pack--dark pack--small">
+          <div class="pack__gloss"></div>
+          <span class="pack__count">48<small>ROLLS</small></span>
+          <div class="logo logo--compact"><span>WELL</span><span>MUDDA</span><span class="logo__last">S<span class="redact"></span></span></div>
+          <div class="pack__meta">HOSPITALITY / COMMERCIAL</div>
+          <div class="pack__rolls"><i></i><i></i><i></i><i></i><i></i><i></i></div>
+          <span class="pack__born">BORN IN<br>THE BAHAMAS</span>
+        </div>
+      </div>
+    </section>
+
+    <section class="manifesto" id="story">
+      <span class="section-tag section-tag--light">04 / WHY THIS EXISTS</span>
+      <p class="manifesto__kicker">WE ARE NOT TRYING TO INVENT TOILET PAPER.</p>
+      <h2>WE'RE TRYING TO MAKE<br>PEOPLE <span>CARE</span> WHICH<br>ONE THEY BUY.</h2>
+      <div class="manifesto__bottom">
+        <p>Born in The Bahamas. Designed with enough personality to travel. Well Mudda S____ is being built as a serious consumer brand first — with hospitality as a practical route to prove demand.</p>
+        <div class="bahamas-mark"><i></i>25.0° N<br>77.4° W</div>
+      </div>
+    </section>
+
+    <section class="campaign">
+      <div class="campaign__panel campaign__panel--blue">
+        <span>CAMPAIGN 001</span>
+        <h3>WELL MUDDA…<br>WE MADE SOME<br>S____.</h3>
+        <p>Launch loud. Sell clean.</p>
+      </div>
+      <div class="campaign__panel campaign__panel--bone">
+        <span>CAMPAIGN 002</span>
+        <h3>GOOD PAPER.<br>BAD TIMING.</h3>
+        <div class="mini-roll"></div>
+      </div>
+      <div class="campaign__panel campaign__panel--black">
+        <span>CAMPAIGN 003</span>
+        <h3>SOFT<br>WHERE IT<br>MATTERS.</h3>
+        <p>Some things should never be rough.</p>
+      </div>
+    </section>
+
+    <section class="faq" id="faq">
+      <span class="section-tag">05 / FAQ</span>
+      <div class="faq__grid">
+        <h2>THE S____<br>PEOPLE ASK.</h2>
+        <div class="faq__list">
+          <button class="faq__item faq__item--open"><span>01</span><div><strong>Can I buy it yet?</strong><p>Not yet. Well Mudda S____ is currently in product development. We are validating the roll, packaging, manufacturing route and launch economics before taking orders.</p></div><b>−</b></button>
+          <button class="faq__item"><span>02</span><div><strong>Is it made in The Bahamas?</strong><p>Well Mudda S____ is a Bahamian brand. We are evaluating third-party manufacturing partners. The final manufacturing origin will be stated clearly before launch.</p></div><b>+</b></button>
+          <button class="faq__item"><span>03</span><div><strong>What will the first product be?</strong><p>The current launch concept is a premium 3-ply household roll in a bold 12-roll consumer pack, with a hospitality case format using the same core product. Final specifications are still being validated.</p></div><b>+</b></button>
+          <button class="faq__item"><span>04</span><div><strong>Are you supplying hotels and villas?</strong><p>That is one of our first intended channels. Villas, short-term rental operators, boutique hotels and other hospitality businesses can register interest for early supply conversations.</p></div><b>+</b></button>
+        </div>
+      </div>
+    </section>
+
+    <section class="launch" id="launch">
+      <div class="launch__inner">
+        <span class="eyebrow eyebrow--light"><i></i> BUILDING IN PUBLIC · PRE-LAUNCH</span>
+        <h2>GET FIRST<br>DIBS ON THE<br>GOOD S____.</h2>
+        <p>We're still developing the product, validating manufacturing and building the first release. Consumer and hospitality launch details are coming next.</p>
+        <div class="launch__actions">
+          <button class="button button--bone" data-scroll="roll">SEE THE PRODUCT CONCEPT</button>
+          <button class="button button--outline-light" data-scroll="hospitality">HOSPITALITY INTEREST</button>
+        </div>
+        <small>No fake countdowns. No fake stock. We'll launch when the product earns it.</small>
+      </div>
+      <div class="launch__mark">
+        <div class="logo"><span>WELL</span><span>MUDDA</span><span class="logo__last">S<span class="redact"></span></span></div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="logo logo--compact"><span>WELL</span><span>MUDDA</span><span class="logo__last">S<span class="redact"></span></span></div>
+    <div><span>BAHAMIAN BRAND · IN DEVELOPMENT</span><span>© 2026 WELL MUDDA S____</span></div>
+    <button data-scroll="top">BACK TO TOP ↑</button>
+  </footer>
+
+  <script src="/script.js"></script>
+</body>
 </html>
