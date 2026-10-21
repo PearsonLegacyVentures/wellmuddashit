@@ -66,3 +66,18 @@ footer{background:var(--bone);padding:4vw;display:grid;grid-template-columns:1fr
   .roll-product-scene{min-height:490px}.sheet-trail{left:42%;top:55%;width:55%;height:110px;padding:1.2rem 1rem 1rem 3.2rem}.sheet-trail span{font-size:1rem}.roll-mini-stack{transform:scale(.75);transform-origin:left bottom}
   .hospitality-roll-stack{transform:scale(.7);transform-origin:right bottom}
 }
+
+/* Real generated concept photography, replaces the former CSS tissue illustrations. */
+.hero__visual--photographic{background:#f7f2e9;clip-path:none;min-height:610px;overflow:hidden}
+.hero__image{width:100%;height:100%;position:absolute;inset:0;object-fit:cover;object-position:center;display:block}
+.hero__image-label{position:absolute;left:3%;bottom:3%;padding:.65rem .85rem;background:rgba(243,236,223,.94);color:#171717;font-size:.59rem;font-weight:800;letter-spacing:.09em;z-index:5}
+.roll__stage--photographic{grid-template-columns:minmax(0,1.2fr) minmax(260px,.8fr);min-height:550px}
+.roll__stage--photographic:before{display:none}
+.roll__photo-frame{height:100%;min-height:550px;position:relative;overflow:hidden}
+.roll__photo-frame img{height:100%;width:100%;object-fit:cover;display:block}
+.roll__photo-frame>span{position:absolute;left:2rem;bottom:2rem;right:2rem;background:rgba(10,10,10,.8);color:white;padding:.65rem .8rem;font-size:.55rem;font-weight:800;letter-spacing:.075em}
+.hospitality__visual--photographic{background:#ded2c0;min-height:620px;position:relative;overflow:hidden}
+.hospitality__visual--photographic img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;display:block}
+.hospitality__image-label{position:absolute;bottom:1rem;left:1rem;right:1rem;background:rgba(243,236,223,.95);padding:.7rem .8rem;color:#0a0a0a;font-weight:800;font-size:.57rem;letter-spacing:.08em;z-index:5}
+@media(max-width:980px){.roll__stage--photographic{grid-template-columns:1fr;min-height:0}.roll__photo-frame{min-height:480px}.hero__visual--photographic{min-height:650px}}
+@media(max-width:620px){.hero__visual--photographic{min-height:440px;clip-path:none}.hero__image{object-fit:cover;object-position:50% center}.hero__image-label{font-size:.46rem;line-height:1.35;right:3%}.roll__photo-frame{min-height:370px}.roll__photo-frame>span{left:1rem;bottom:1rem;right:1rem}.hospitality__visual--photographic{min-height:430px}}
