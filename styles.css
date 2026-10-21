@@ -1,5 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Anton&family=DM+Sans:opsz,wght@9..40,400;9..40,500;9..40,600;9..40,700&display=swap');
-:root{--bone:#f3ecdf;--ink:#0a0a0a;--blue:#005cff;--line:rgba(10,10,10,.18);font-family:"DM Sans",system-ui,sans-serif;color:var(--ink);background:var(--bone)}
+:root{--bone:#f3ecdf;--ink:#0a0a0a;--blue:#005cff;--aqua:#38c9c8;--gold:#f6cf45;--line:rgba(10,10,10,.18);font-family:"DM Sans",system-ui,sans-serif;color:var(--ink);background:var(--bone)}
 *{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;background:var(--bone);overflow-x:hidden}button{font:inherit;cursor:pointer}::selection{background:var(--blue);color:#fff}
 .nav{height:78px;padding:0 3vw;display:grid;grid-template-columns:1fr auto 1fr;align-items:center;position:fixed;inset:0 0 auto;z-index:50;backdrop-filter:blur(18px);background:rgba(243,236,223,.84);border-bottom:1px solid rgba(10,10,10,.12)}
 .wordmark{border:0;background:none;padding:0;font-family:"Anton";font-size:1.12rem;letter-spacing:.03em;text-align:left}.nav__links{display:flex;gap:2.25rem}.nav__links button,.nav__cta{border:0;background:none;text-transform:uppercase;font-size:.72rem;font-weight:700;letter-spacing:.08em}.nav__cta{justify-self:end;border:1px solid var(--ink);padding:.85rem 1rem;transition:.2s}.nav__cta:hover{background:var(--ink);color:var(--bone)}.menu{display:none;border:0;background:none;font-size:1.8rem}
@@ -18,3 +18,51 @@
 footer{background:var(--bone);padding:4vw;display:grid;grid-template-columns:1fr 1fr 1fr;align-items:end;border-top:1px solid var(--line)}footer .logo{font-size:2.2rem}footer>div{display:flex;flex-direction:column;gap:.4rem;font-size:.58rem;letter-spacing:.08em;font-weight:700}footer>button{justify-self:end;border:0;background:none;font-size:.65rem;font-weight:800;letter-spacing:.08em}
 @media(max-width:980px){.nav{grid-template-columns:1fr auto;height:66px}.nav__links{display:none;position:absolute;top:66px;left:0;right:0;background:var(--bone);padding:2rem 4vw;flex-direction:column;border-bottom:1px solid var(--ink)}.nav__links--open{display:flex}.nav__cta{display:none}.menu{display:block}.hero{grid-template-columns:1fr;padding-top:105px}.hero__visual{min-height:620px;margin-top:3rem}.hero h1{font-size:clamp(4.5rem,15vw,8rem)}.pack{width:min(75vw,540px)}.blank-section__grid,.hospitality,.faq__grid,.launch{grid-template-columns:1fr}.roll__head{grid-template-columns:1fr}.roll__stage{grid-template-columns:1fr;min-height:900px}.roll-object{width:min(74vw,540px);margin-top:4rem}.roll__specs{padding:2rem 6vw 4rem}.hospitality__visual{min-height:580px}.hospitality__visual .pack{width:min(70vw,500px)}.campaign{grid-template-columns:1fr;min-height:auto}.campaign__panel{min-height:520px;padding:8vw 5vw}.launch__mark{margin-top:5rem}}
 @media(max-width:620px){.hero,.blank-section,.roll,.hospitality,.manifesto,.faq,.launch{padding-left:5vw;padding-right:5vw}.hero h1{font-size:18vw}.hero__visual{min-height:500px;clip-path:polygon(5% 0,100% 0,100% 95%,0 100%,0 8%)}.hero__pack{top:48%}.pack{width:84vw;border-radius:12px}.pack__stripe{width:18%}.pack__meta{font-size:.48rem}.pack__count{font-size:1.3rem}.pack__born{display:none}.stamp{width:70px;height:70px;font-size:.8rem}.blank-section h2,.hospitality h2,.manifesto h2,.faq h2,.launch h2{font-size:16vw}.roll__head h2{font-size:18vw}.roll__stage{min-height:760px}.roll-object{width:78vw}.roll-object__side .logo{font-size:1.8rem}.roll-object__hole{box-shadow:inset 0 0 0 14px #c6aa88,inset 0 0 12px 18px rgba(0,0,0,.22)}.hospitality__visual{min-height:480px}.hotel-card{width:46%}.hotel-card strong{font-size:4rem}.manifesto__bottom{flex-direction:column;align-items:flex-start;gap:3rem}.bahamas-mark{text-align:left}.campaign__panel{min-height:450px}.campaign__panel h3{font-size:14vw}.faq__item{grid-template-columns:34px 1fr 24px}footer{grid-template-columns:1fr;gap:2rem}footer>button{justify-self:start}}
+
+/* Product-forward additions */
+.hero-rolls{position:absolute;z-index:6;left:4%;bottom:1.5%;width:48%;height:30%;pointer-events:none}
+.tp-roll{position:absolute;width:126px;height:126px;border-radius:18% 50% 50% 18%;background:repeating-linear-gradient(150deg,#fffaf2 0 6px,#ece3d5 7px 9px);box-shadow:inset -18px 0 24px rgba(0,0,0,.1),0 18px 30px rgba(0,0,0,.18);overflow:hidden}
+.tp-roll:after{content:"";position:absolute;inset:8%;border-radius:15% 50% 50% 15%;opacity:.25;background-image:radial-gradient(circle at 18px 18px,rgba(170,150,120,.35) 1.5px,transparent 2px);background-size:22px 22px}
+.tp-hole{position:absolute;z-index:2;width:34%;aspect-ratio:1;border-radius:50%;right:9%;top:33%;background:#9c8065;box-shadow:inset 0 0 0 12px #c9ac89,inset 0 0 10px 14px rgba(0,0,0,.2)}
+.tp-mark{position:absolute;z-index:3;left:13%;top:42%;font-family:"Anton";font-size:.72rem;transform:rotate(-90deg);letter-spacing:.03em}
+.tp-roll--a{left:4%;bottom:0;transform:rotate(-9deg);width:145px;height:145px}.tp-roll--b{left:32%;bottom:11%;transform:rotate(7deg)}.tp-roll--c{left:55%;bottom:-4%;transform:rotate(-2deg);width:112px;height:112px}
+.tp-sheet{position:absolute;left:55%;bottom:-2%;background:#f9f2e6;color:#111;width:220px;height:66px;padding:1.1rem 1.2rem 1rem 3rem;font-size:.54rem;font-weight:900;letter-spacing:.1em;transform:rotate(7deg);box-shadow:0 14px 22px rgba(0,0,0,.12)}
+.bahamas-chip{position:absolute;right:5%;top:7%;z-index:7;background:var(--bone);color:var(--ink);display:flex;gap:.8rem;align-items:center;padding:.7rem .85rem;box-shadow:0 8px 25px rgba(0,0,0,.14)}
+.bahamas-chip b{font-family:"Anton";font-size:2.15rem;line-height:1;color:var(--blue)}.bahamas-chip span{font-size:.5rem;line-height:1.2;font-weight:900;letter-spacing:.12em}
+
+/* Bahamas identity section */
+.bahamas-section{position:relative;overflow:hidden;padding:8vw 4vw 10vw;background:var(--aqua);color:var(--ink);min-height:760px}
+.bahamas-section__top{display:flex;justify-content:space-between;align-items:center}
+.bahamas-flag-mark{display:grid;grid-template-columns:22px 40px;width:62px;height:32px;position:relative}
+.bahamas-flag-mark i,.bahamas-flag-mark b,.bahamas-flag-mark em{display:block;position:absolute}
+.bahamas-flag-mark i{left:0;top:0;border-top:16px solid transparent;border-bottom:16px solid transparent;border-left:22px solid var(--ink)}
+.bahamas-flag-mark b{right:0;top:0;width:40px;height:10.6px;background:var(--aqua);box-shadow:0 10.6px 0 var(--gold),0 21.2px 0 var(--aqua)}
+.bahamas-section__grid{display:grid;grid-template-columns:1.05fr .95fr;gap:8vw;align-items:end;position:relative;z-index:2;margin-top:8vw}
+.bahamas-kicker{font-size:.68rem;font-weight:900;letter-spacing:.14em;margin:0 0 1.5rem}
+.bahamas-section h2{font-family:"Anton";font-size:clamp(6rem,12vw,13rem);line-height:.82;margin:0;font-weight:400;letter-spacing:-.035em}
+.bahamas-section__copy{max-width:610px;padding-bottom:1rem}.bahamas-section__copy>p{font-size:1.08rem;line-height:1.65;margin:0 0 1.35rem}
+.island-code{display:flex;gap:2rem;align-items:end;border-top:1px solid rgba(0,0,0,.25);padding-top:1.2rem;margin-top:2rem;font-family:"Anton";font-size:1rem}.island-code strong{margin-left:auto;font-size:1.45rem}
+.bahamas-word{position:absolute;font-family:"Anton";font-size:28vw;line-height:.7;bottom:-3vw;right:-2vw;color:rgba(255,255,255,.16);letter-spacing:-.04em;pointer-events:none}
+
+/* Roll scene upgrades */
+.roll-product-scene{position:relative;min-height:620px;display:grid;place-items:center}
+.roll-product-scene .roll-object{z-index:2}
+.sheet-trail{position:absolute;z-index:1;left:53%;top:50%;width:41%;height:145px;background:#f5ecdd;color:#111;transform:rotate(7deg);padding:2rem 1.5rem 1rem 4.5rem;box-shadow:0 22px 35px rgba(0,0,0,.16);display:flex;flex-direction:column;justify-content:center}
+.sheet-trail span{font-family:"Anton";font-size:1.45rem}.sheet-trail small{font-size:.5rem;font-weight:900;letter-spacing:.11em;margin-top:.3rem}
+.roll-mini-stack{position:absolute;left:7%;bottom:5%;z-index:3;width:220px;height:140px}.roll-mini-stack .tp-roll:first-child{left:0;bottom:0;width:110px;height:110px}.roll-mini-stack .tp-roll:last-child{left:87px;bottom:24px;width:96px;height:96px}
+
+/* Hospitality local cues */
+.hospitality-locations{display:flex;gap:.5rem;flex-wrap:wrap;margin:1.4rem 0 0}.hospitality-locations span{border:1px solid var(--ink);padding:.45rem .55rem;font-size:.54rem;font-weight:900;letter-spacing:.09em}
+.hospitality-roll-stack{position:absolute;right:4%;bottom:2%;z-index:4;width:270px;height:200px}.hospitality-roll-stack .tp-roll{width:115px;height:115px}.tp-roll--hotel-1{left:0;bottom:0;transform:rotate(-7deg)}.tp-roll--hotel-2{left:88px;bottom:18px;transform:rotate(4deg)}.tp-roll--hotel-3{left:153px;bottom:2px;transform:rotate(9deg);width:98px!important;height:98px!important}
+
+@media(max-width:980px){
+  .hero-rolls{width:60%;height:28%}.bahamas-chip{right:4%;top:5%}
+  .bahamas-section__grid{grid-template-columns:1fr;gap:3rem}.bahamas-section{min-height:700px}
+  .roll-product-scene{min-height:560px}.sheet-trail{left:48%;width:45%}
+}
+@media(max-width:620px){
+  .hero-rolls{left:2%;bottom:0;width:75%;height:30%}.hero-rolls .tp-roll{transform:scale(.72)}.tp-roll--a{left:-2%;bottom:-8%}.tp-roll--b{left:28%;bottom:2%}.tp-roll--c{left:52%;bottom:-10%}.tp-sheet{display:none}.bahamas-chip{top:4%;right:4%;padding:.55rem .65rem}.bahamas-chip b{font-size:1.6rem}
+  .bahamas-section{padding-left:5vw;padding-right:5vw;min-height:620px}.bahamas-section h2{font-size:20vw}.island-code{gap:1rem;flex-wrap:wrap}.island-code strong{margin-left:0;width:100%}
+  .roll-product-scene{min-height:490px}.sheet-trail{left:42%;top:55%;width:55%;height:110px;padding:1.2rem 1rem 1rem 3.2rem}.sheet-trail span{font-size:1rem}.roll-mini-stack{transform:scale(.75);transform-origin:left bottom}
+  .hospitality-roll-stack{transform:scale(.7);transform-origin:right bottom}
+}
