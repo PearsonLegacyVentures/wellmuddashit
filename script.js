@@ -1,6 +1,22 @@
-const menuButton=document.getElementById("menuButton");const navLinks=document.getElementById("navLinks");
-menuButton?.addEventListener("click",()=>{navLinks.classList.toggle("nav__links--open");menuButton.textContent=navLinks.classList.contains("nav__links--open")?"×":"≡"});
-document.querySelectorAll("[data-scroll]").forEach(btn=>btn.addEventListener("click",()=>{const id=btn.dataset.scroll;navLinks?.classList.remove("nav__links--open");if(menuButton)menuButton.textContent="≡";if(id==="top"){window.scrollTo({top:0,behavior:"smooth"});return}document.getElementById(id)?.scrollIntoView({behavior:"smooth"})}));
-const words=["SOFT.","SERIOUS.","STOCKED.","SMOOTH.","S____."];let wi=0;const blank=document.getElementById("blankWord");setInterval(()=>{wi=(wi+1)%words.length;if(blank){blank.animate([{opacity:0,transform:"translateY(12px)"},{opacity:1,transform:"translateY(0)"}],{duration:350,easing:"ease-out"});blank.textContent=words[wi]}},1500);
-const hero=document.getElementById("heroVisual");window.addEventListener("pointermove",e=>{if(!hero)return;const x=(e.clientX/window.innerWidth-.5)*12;const y=(e.clientY/window.innerHeight-.5)*-9;hero.style.setProperty("--rx",y+"deg");hero.style.setProperty("--ry",x+"deg")});
-document.querySelectorAll(".faq__item").forEach(item=>item.addEventListener("click",()=>{document.querySelectorAll(".faq__item").forEach(other=>{if(other!==item){other.classList.remove("faq__item--open");const b=other.querySelector("b");if(b)b.textContent="+"}});item.classList.toggle("faq__item--open");const b=item.querySelector("b");if(b)b.textContent=item.classList.contains("faq__item--open")?"−":"+"}));
+(function () {
+  const menu = document.getElementById('menuButton');
+  const nav = document.getElementById('primary-nav');
+  if (menu && nav) {
+    const close = () => {
+      menu.setAttribute('aria-expanded', 'false');
+      menu.setAttribute('aria-label', 'Open menu');
+      nav.classList.remove('is-open');
+    };
+    menu.addEventListener('click', () => {
+      const open = menu.getAttribute('aria-expanded') !== 'true';
+      menu.setAttribute('aria-expanded', String(open));
+      menu.setAttribute('aria-label', open ? 'Close menu' : 'Open menu');
+      nav.classList.toggle('is-open', open);
+    });
+    nav.querySelectorAll('a').forEach((link) => link.addEventListener('click', close));
+    document.addEventListener('keydown', (event) => { if (event.key === 'Escape') close(); });
+    window.addEventListener('resize', () => { if (window.innerWidth > 900) close(); });
+  }
+  const year = document.getElementById('year');
+  if (year) year.textContent = String(new Date().getFullYear());
+}());
