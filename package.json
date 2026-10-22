@@ -1,8 +1,8 @@
 {
   "name": "well-mudda-site",
   "private": true,
-  "version": "1.0.0",
+  "version": "1.1.0",
   "scripts": {
-    "build": "rm -rf dist && mkdir -p dist && cp index.html styles.css script.js dist/ && cp -R assets dist/assets"
+    "build": "rm -rf dist && mkdir -p dist && cp index.html styles.css script.js favicon.svg dist/ && cp -R assets dist/assets"
   }
 }
