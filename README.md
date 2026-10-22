@@ -1,24 +1,35 @@
-# Well Mudda S____
+# WELL MUDDA S____
 
-Pre-launch brand website for **Well Mudda S____**, a Bahamian consumer tissue concept.
+Pre-launch marketing website for a Bahamian toilet tissue brand in development.
 
-## Website design
-The site uses a restrained, product-forward editorial layout inspired by the clean structure of the Bahama Mineral Co. website. It keeps Well Mudda's own blue, cream, humour and packaging imagery. Product renderings are clearly labelled as concepts.
+## Visual direction — October 2026
+
+Art direction is inspired by the supplied Tropical Premium Toilet Tissue campaign board: clean editorial lifestyle photography, warm ivory and sand tones, restrained ocean blue, prominent black packaging-style typography, and subtle handwritten language.
+
+The site is rebuilt into a responsive product-first experience: hero, brand story, launch concept, packaging/details imagery, hospitality, Bahamas origin, FAQ and enquiries. It avoids harsh geometric sections, crowded tickers, artificial countdowns or unsupported performance claims.
 
 ## Deployment
-This is a **static HTML/CSS/JS site**, not a Vite app. The live entrypoint is root `index.html`; root `styles.css` and `script.js` are copied to `dist/` along with `assets/`.
+
+This repository serves a static HTML/CSS/JS website. The production entrypoint is root `index.html`; root `styles.css`, `script.js`, `favicon.svg` plus `assets/` are copied into `dist/` by the build script.
 
 - Cloudflare Pages build command: `npm run build`
-- Build output directory: `dist`
-- No framework preset required
+- Output directory: `dist`
+- Framework preset: None
 
-The `src/` directory contains an older unused React prototype. It is **not** used in the Cloudflare build.
+The old `src/` React prototype is unused by the deployed build.
 
-## Product and claims
-The premium 3-ply tissue, 12-roll consumer pack, and packaging shown are proposed launch concepts only. Supplier selection, samples, specifications and commercial availability have not yet been finalized. No purchases or backorders are accepted.
+## Product claims
+
+Product images are concept renderings and explicitly labelled as such. The first proposed SKU is premium-positioned 3-ply tissue in a 12-roll pack, both to be validated. Do not claim a final sheet count, septic safety, production location, certification, pricing or availability without verification.
 
 ## Contact
-The consumer and hospitality links open prefilled WhatsApp enquiries to +1 (242) 565-9382. Update them if a dedicated business contact becomes available.
 
-## Before commercial launch
-Verify final manufacturer and country-of-origin disclosures, product specifications, price, margin, packaging, availability and regulatory claims. Add ordering and a privacy policy only when a real commerce workflow is operational.
+Enquiry CTA links use the existing WhatsApp number +1 (242) 565-9382. Replace with an approved Well Mudda business contact when available. No commerce, deposits, subscriptions or pre-orders are supported yet.
+
+## Production checklist
+
+1. Verify images match final brand direction and license/ownership.
+2. Approve manufacturer, testing, roll specs, packaging and country-of-origin statement.
+3. Add real prices and order handling only when commercial supply is validated.
+4. Add privacy/terms and analytics if lead-capture or checkout expands.
+5. Verify mobile design, link checks and live Cloudflare deployment.
